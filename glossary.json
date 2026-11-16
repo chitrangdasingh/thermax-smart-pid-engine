@@ -1,0 +1,1829 @@
+{
+  "Read me": [
+    {
+      "Item": "Purpose",
+      "Detail": "Glossary of the core elements of a P&ID: equipment symbols, instrumentation and control, valves, and line conventions.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!2",
+      "status": "source_draft",
+      "symbol_id": "310e2a35dc53420c"
+    },
+    {
+      "Item": "How to use",
+      "Detail": "Pick the symbol or tag from the relevant sheet. Each row names the standard it follows in the last column.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!3",
+      "status": "source_draft",
+      "symbol_id": "c2f24c4483e6569c"
+    },
+    {
+      "Item": "Source note",
+      "Detail": "Compiled from general knowledge of the standards listed below, not copied from them. Verify against your company's licensed copies before issuing as a project legend sheet.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!4",
+      "status": "source_draft",
+      "symbol_id": "5ed2f70c22229549"
+    },
+    {
+      "Item": "Equipment symbols note",
+      "Detail": "ISA-5.1 covers instrumentation only. No ISA or current ASME standard fixes one set of equipment outlines; industry practice follows PIP PIC001 or ISO 10628-2. Outlines here are the commonly used ones.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!5",
+      "status": "source_draft",
+      "symbol_id": "b5ac6bef866134e2"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ANSI/ISA-5.1 - Instrumentation Symbols and Identification: instrument bubbles, tag letters, signal lines, valve and actuator symbols.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!6",
+      "status": "source_draft",
+      "symbol_id": "859f3d9aea395449"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ISA-5.2 / ISA-5.3 / ISA-5.4 - binary logic diagrams, shared display and computer symbols, instrument loop diagrams.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!7",
+      "status": "source_draft",
+      "symbol_id": "c4381aece5119c61"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ASME B31.3 - Process Piping: basis for pipe specifications referenced in line numbers.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!8",
+      "status": "source_draft",
+      "symbol_id": "ff39337208b9a780"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ASME B36.10M / B36.19M - pipe sizes (NPS) and schedules for carbon and stainless steel pipe.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!9",
+      "status": "source_draft",
+      "symbol_id": "6e248c8db7607d5e"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ASME B16.5 - flange pressure classes (150, 300, 600 ...) used in pipe specs. ASME B16.34 - valve ratings.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!10",
+      "status": "source_draft",
+      "symbol_id": "135acccdb10a4889"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ASME BPVC Section VIII - pressure vessel design and overpressure protection (basis for PSVs shown on the P&ID).",
+      "source": "PID_core_elements_glossary.xlsx::Read me!11",
+      "status": "source_draft",
+      "symbol_id": "0735e68ca73d4c6e"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "PIP PIC001 - P&ID Documentation Criteria: widely used format, equipment symbols and tagging practice.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!12",
+      "status": "source_draft",
+      "symbol_id": "c05885772524c9af"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ISO 10628-2 - graphical symbols for process plant diagrams. ISO 14617 - graphical symbols for diagrams.",
+      "source": "PID_core_elements_glossary.xlsx::Read me!13",
+      "status": "source_draft",
+      "symbol_id": "68fb0e8492244645"
+    },
+    {
+      "Item": "Standard",
+      "Detail": "ASME Y32.11 - graphical symbols for process flow diagrams (older standard, withdrawn; some legacy legends still cite it).",
+      "source": "PID_core_elements_glossary.xlsx::Read me!14",
+      "status": "source_draft",
+      "symbol_id": "a650e8d06b3431b6"
+    }
+  ],
+  "Equipment symbols": [
+    {
+      "Element": "Centrifugal pump",
+      "Typical tag prefix": "P",
+      "Standard outline (how it is drawn)": "Circle with a tangential discharge nozzle at the top; suction enters at the centre",
+      "Data normally shown beside it": "Tag, service, capacity, head, motor kW",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!2",
+      "status": "source_draft",
+      "symbol_id": "2dcdb0661becd104"
+    },
+    {
+      "Element": "Positive displacement pump (gear, screw)",
+      "Typical tag prefix": "P",
+      "Standard outline (how it is drawn)": "Circle containing two small meshing circles or a rotor mark",
+      "Data normally shown beside it": "Tag, capacity, differential pressure",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!3",
+      "status": "source_draft",
+      "symbol_id": "f6a3bc46e5949e49"
+    },
+    {
+      "Element": "Reciprocating / metering pump",
+      "Typical tag prefix": "P",
+      "Standard outline (how it is drawn)": "Rectangle (cylinder) with piston rod, or circle with a triangle",
+      "Data normally shown beside it": "Tag, capacity, stroke",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!4",
+      "status": "source_draft",
+      "symbol_id": "eb0bc9c842da2f9c"
+    },
+    {
+      "Element": "Centrifugal compressor",
+      "Typical tag prefix": "C or K",
+      "Standard outline (how it is drawn)": "Tapered body (trapezoid), wide at suction and narrow at discharge",
+      "Data normally shown beside it": "Tag, capacity, suction and discharge pressure, driver kW",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!5",
+      "status": "source_draft",
+      "symbol_id": "9da0763a9c44a507"
+    },
+    {
+      "Element": "Reciprocating compressor",
+      "Typical tag prefix": "C or K",
+      "Standard outline (how it is drawn)": "Rectangle cylinder with piston, often on a frame",
+      "Data normally shown beside it": "Tag, capacity, stages",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!6",
+      "status": "source_draft",
+      "symbol_id": "f034d5219d08fc62"
+    },
+    {
+      "Element": "Blower / fan",
+      "Typical tag prefix": "B or K",
+      "Standard outline (how it is drawn)": "Circle with tangential outlet (scroll casing); roots blower shown as two lobes in a casing",
+      "Data normally shown beside it": "Tag, flow, differential pressure",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!7",
+      "status": "source_draft",
+      "symbol_id": "39fc8ef6d55ff746"
+    },
+    {
+      "Element": "Vertical vessel / drum",
+      "Typical tag prefix": "V or D",
+      "Standard outline (how it is drawn)": "Tall rectangle with dished (elliptical) heads top and bottom",
+      "Data normally shown beside it": "Tag, size (diameter x T/T), design pressure and temperature, material",
+      "Reference practice": "PIP PIC001 / ISO 10628-2; ASME VIII design",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!8",
+      "status": "source_draft",
+      "symbol_id": "841059a40dee9d85"
+    },
+    {
+      "Element": "Horizontal vessel / drum",
+      "Typical tag prefix": "V or D",
+      "Standard outline (how it is drawn)": "Long rectangle with dished heads at both ends",
+      "Data normally shown beside it": "Tag, size, design conditions",
+      "Reference practice": "PIP PIC001 / ISO 10628-2; ASME VIII design",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!9",
+      "status": "source_draft",
+      "symbol_id": "004f0dac445aec2a"
+    },
+    {
+      "Element": "Column / tower",
+      "Typical tag prefix": "T or C",
+      "Standard outline (how it is drawn)": "Tall vessel with dashed horizontal lines for trays or a crossed section for packing",
+      "Data normally shown beside it": "Tag, size, number of trays or packing height",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!10",
+      "status": "source_draft",
+      "symbol_id": "6b558ba709ea6835"
+    },
+    {
+      "Element": "Reactor",
+      "Typical tag prefix": "R",
+      "Standard outline (how it is drawn)": "Vessel outline, with catalyst bed hatching, jacket or agitator as applicable",
+      "Data normally shown beside it": "Tag, size, design conditions",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!11",
+      "status": "source_draft",
+      "symbol_id": "5a75a94b1a68b86d"
+    },
+    {
+      "Element": "Atmospheric storage tank",
+      "Typical tag prefix": "TK",
+      "Standard outline (how it is drawn)": "Flat-bottom cylinder with cone or dome roof",
+      "Data normally shown beside it": "Tag, capacity, size",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!12",
+      "status": "source_draft",
+      "symbol_id": "cd0a802550a338ee"
+    },
+    {
+      "Element": "Bin / hopper / silo",
+      "Typical tag prefix": "H or TK",
+      "Standard outline (how it is drawn)": "Rectangle with a conical bottom outlet",
+      "Data normally shown beside it": "Tag, capacity",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!13",
+      "status": "source_draft",
+      "symbol_id": "d9df9db8de2d6b7f"
+    },
+    {
+      "Element": "Shell and tube heat exchanger",
+      "Typical tag prefix": "E",
+      "Standard outline (how it is drawn)": "Circle with a zigzag line through it, or a shell outline with channel heads and nozzles",
+      "Data normally shown beside it": "Tag, duty, area, design conditions shell/tube",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!14",
+      "status": "source_draft",
+      "symbol_id": "0673f66e4b946d47"
+    },
+    {
+      "Element": "Plate heat exchanger",
+      "Typical tag prefix": "E",
+      "Standard outline (how it is drawn)": "Rectangle with parallel vertical lines or crossed diagonals",
+      "Data normally shown beside it": "Tag, duty, area, number of plates",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!15",
+      "status": "source_draft",
+      "symbol_id": "232f6545335de1a7"
+    },
+    {
+      "Element": "Air cooler (fin-fan)",
+      "Typical tag prefix": "E or AC",
+      "Standard outline (how it is drawn)": "Rectangle tube bundle with a fan symbol below",
+      "Data normally shown beside it": "Tag, duty, motor kW",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!16",
+      "status": "source_draft",
+      "symbol_id": "44d01b685f0f7387"
+    },
+    {
+      "Element": "Fired heater / furnace",
+      "Typical tag prefix": "H or F",
+      "Standard outline (how it is drawn)": "Box with a stack and a coil drawn inside; burner at the base",
+      "Data normally shown beside it": "Tag, duty, fuel",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!17",
+      "status": "source_draft",
+      "symbol_id": "7b5bcc26d59deb0f"
+    },
+    {
+      "Element": "Electric heater",
+      "Typical tag prefix": "E or H",
+      "Standard outline (how it is drawn)": "Vessel or line section with a resistance (zigzag) element",
+      "Data normally shown beside it": "Tag, kW",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!18",
+      "status": "source_draft",
+      "symbol_id": "92a0d4b446692046"
+    },
+    {
+      "Element": "Cyclone",
+      "Typical tag prefix": "CY",
+      "Standard outline (how it is drawn)": "Cylinder on a cone, tangential inlet, top gas outlet, bottom solids outlet",
+      "Data normally shown beside it": "Tag, flow, pressure drop",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!19",
+      "status": "source_draft",
+      "symbol_id": "b83f7bb5c67fbe24"
+    },
+    {
+      "Element": "Filter / strainer",
+      "Typical tag prefix": "F",
+      "Standard outline (how it is drawn)": "Vessel or box with a dashed line (filter element) across it; bag filter shown with hanging bags",
+      "Data normally shown beside it": "Tag, filtration rating, pressure drop",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!20",
+      "status": "source_draft",
+      "symbol_id": "d08b46128c73cb8b"
+    },
+    {
+      "Element": "Agitator / mixer",
+      "Typical tag prefix": "A or M",
+      "Standard outline (how it is drawn)": "Shaft with impeller blades inside the vessel, motor on top",
+      "Data normally shown beside it": "Tag, motor kW, speed",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!21",
+      "status": "source_draft",
+      "symbol_id": "99944c1241ae36d3"
+    },
+    {
+      "Element": "Screw conveyor / feeder",
+      "Typical tag prefix": "SC",
+      "Standard outline (how it is drawn)": "Long trough rectangle with a helical line, motor at one end",
+      "Data normally shown beside it": "Tag, capacity, motor kW",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!22",
+      "status": "source_draft",
+      "symbol_id": "f6d945478f854bba"
+    },
+    {
+      "Element": "Rotary airlock valve",
+      "Typical tag prefix": "RV",
+      "Standard outline (how it is drawn)": "Circle with radial vanes in a solids line",
+      "Data normally shown beside it": "Tag, capacity",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!23",
+      "status": "source_draft",
+      "symbol_id": "9c1cb2a793c40cd7"
+    },
+    {
+      "Element": "Ejector / eductor",
+      "Typical tag prefix": "J",
+      "Standard outline (how it is drawn)": "Converging-diverging nozzle body with a side suction branch",
+      "Data normally shown beside it": "Tag, motive fluid, capacity",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!24",
+      "status": "source_draft",
+      "symbol_id": "0c855e8966fe9fb6"
+    },
+    {
+      "Element": "Flare / stack",
+      "Typical tag prefix": "FL",
+      "Standard outline (how it is drawn)": "Tall narrow stack with a flame mark at the tip",
+      "Data normally shown beside it": "Tag, capacity",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!25",
+      "status": "source_draft",
+      "symbol_id": "468c6357fec5fd92"
+    },
+    {
+      "Element": "Cooling tower",
+      "Typical tag prefix": "CT",
+      "Standard outline (how it is drawn)": "Trapezoid or box with fan on top and basin below",
+      "Data normally shown beside it": "Tag, duty, water flow",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!26",
+      "status": "source_draft",
+      "symbol_id": "66b1d948710461e5"
+    },
+    {
+      "Element": "Electric motor (driver)",
+      "Typical tag prefix": "M",
+      "Standard outline (how it is drawn)": "Circle with the letter M, coupled to the driven machine",
+      "Data normally shown beside it": "kW, speed; VFD noted if fitted",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!27",
+      "status": "source_draft",
+      "symbol_id": "80d44e01ca64c761"
+    },
+    {
+      "Element": "Turbine (driver)",
+      "Typical tag prefix": "T or ST",
+      "Standard outline (how it is drawn)": "Tapered body, narrow at inlet and wide at exhaust",
+      "Data normally shown beside it": "Tag, power",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!28",
+      "status": "source_draft",
+      "symbol_id": "6291bd9c3d2ef5f2"
+    },
+    {
+      "Element": "Gas engine / generator package",
+      "Typical tag prefix": "PK or G",
+      "Standard outline (how it is drawn)": "Box marked as a vendor package with tie-in points only",
+      "Data normally shown beside it": "Tag, kW electrical",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!29",
+      "status": "source_draft",
+      "symbol_id": "dbe61e9746713ed0"
+    },
+    {
+      "Element": "Vendor package boundary",
+      "Typical tag prefix": "PK",
+      "Standard outline (how it is drawn)": "Dash-dot rectangle around the packaged items",
+      "Data normally shown beside it": "Package tag, vendor drawing reference",
+      "Reference practice": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Equipment symbols!30",
+      "status": "source_draft",
+      "symbol_id": "3191c5bff11d9aa6"
+    }
+  ],
+  "Instrumentation and control": [
+    {
+      "Group": "Bubble shape",
+      "Symbol or tag": "Circle",
+      "Meaning": "Discrete (stand-alone) instrument",
+      "Notes": "One circle per function",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!2",
+      "status": "source_draft",
+      "symbol_id": "dd9d233d123b6bd4"
+    },
+    {
+      "Group": "Bubble shape",
+      "Symbol or tag": "Circle inside a square",
+      "Meaning": "Shared display / shared control (DCS)",
+      "Notes": "Function shown on an operator screen",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!3",
+      "status": "source_draft",
+      "symbol_id": "a89ca2c8ba78e132"
+    },
+    {
+      "Group": "Bubble shape",
+      "Symbol or tag": "Hexagon",
+      "Meaning": "Computer function",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!4",
+      "status": "source_draft",
+      "symbol_id": "c10e51ae6ca02784"
+    },
+    {
+      "Group": "Bubble shape",
+      "Symbol or tag": "Diamond inside a square",
+      "Meaning": "Programmable logic control (PLC); also used for safety logic",
+      "Notes": "Mark safety functions (SIS) clearly on the legend",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!5",
+      "status": "source_draft",
+      "symbol_id": "2b53c0f33c7fc4de"
+    },
+    {
+      "Group": "Bubble location",
+      "Symbol or tag": "No line through the bubble",
+      "Meaning": "Field mounted",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!6",
+      "status": "source_draft",
+      "symbol_id": "4364e8ff920f7f57"
+    },
+    {
+      "Group": "Bubble location",
+      "Symbol or tag": "Single solid horizontal line",
+      "Meaning": "Primary location, normally accessible to the operator (control room / main panel)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!7",
+      "status": "source_draft",
+      "symbol_id": "285c8d3d55569191"
+    },
+    {
+      "Group": "Bubble location",
+      "Symbol or tag": "Dashed horizontal line",
+      "Meaning": "Behind the panel, not normally accessible to the operator",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!8",
+      "status": "source_draft",
+      "symbol_id": "8e20af6ff299f254"
+    },
+    {
+      "Group": "Bubble location",
+      "Symbol or tag": "Double solid horizontal line",
+      "Meaning": "Auxiliary location (local panel), accessible to the operator",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!9",
+      "status": "source_draft",
+      "symbol_id": "4d916c74b9af180d"
+    },
+    {
+      "Group": "Tag structure",
+      "Symbol or tag": "Letters above, number below",
+      "Meaning": "Function letters in the top half, loop number in the bottom half",
+      "Notes": "Example: FIC over 4026",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!10",
+      "status": "source_draft",
+      "symbol_id": "d7d3deec8e884f7e"
+    },
+    {
+      "Group": "Tag structure",
+      "Symbol or tag": "First letter",
+      "Meaning": "Measured or initiating variable (F flow, L level, P pressure, T temperature, A analysis ...)",
+      "Notes": "Full table on sheet 'ISA-5.1 letters'",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!11",
+      "status": "source_draft",
+      "symbol_id": "a2ffdaa540152e75"
+    },
+    {
+      "Group": "Tag structure",
+      "Symbol or tag": "Succeeding letters",
+      "Meaning": "Functions: I indicate, R record, C control, T transmit, S switch, A alarm, V valve, E element",
+      "Notes": "Order: readout / passive first, then output",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!12",
+      "status": "source_draft",
+      "symbol_id": "eab1cb7553cf17b4"
+    },
+    {
+      "Group": "Tag structure",
+      "Symbol or tag": "Loop number",
+      "Meaning": "All devices of one loop share the same number",
+      "Notes": "FT-4026, FIC-4026, FV-4026",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!13",
+      "status": "source_draft",
+      "symbol_id": "c228cb1fb9c8e22b"
+    },
+    {
+      "Group": "Tag structure",
+      "Symbol or tag": "Modifiers H, HH, L, LL",
+      "Meaning": "High, high-high, low, low-low",
+      "Notes": "HH and LL normally used for trips",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!14",
+      "status": "source_draft",
+      "symbol_id": "603174fb70ec3089"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PI",
+      "Meaning": "Pressure indicator (gauge)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!15",
+      "status": "source_draft",
+      "symbol_id": "86c1d3827fc8684d"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PT",
+      "Meaning": "Pressure transmitter",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!16",
+      "status": "source_draft",
+      "symbol_id": "4b5d8cba66feb119"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PIT",
+      "Meaning": "Pressure indicating transmitter",
+      "Notes": "Transmitter with a local display",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!17",
+      "status": "source_draft",
+      "symbol_id": "b59d599759bf555a"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PIC",
+      "Meaning": "Pressure indicating controller",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!18",
+      "status": "source_draft",
+      "symbol_id": "a73baf10db6fa906"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PDI / PDT",
+      "Meaning": "Pressure differential indicator / transmitter",
+      "Notes": "Filters, beds, cyclones",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!19",
+      "status": "source_draft",
+      "symbol_id": "1d5200fef8cb2738"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PSH / PSL / PSHH",
+      "Meaning": "Pressure switch high / low / high-high",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!20",
+      "status": "source_draft",
+      "symbol_id": "b7ea066f0c8ea503"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PCV",
+      "Meaning": "Self-contained pressure regulator",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!21",
+      "status": "source_draft",
+      "symbol_id": "dc116f7db57a23d8"
+    },
+    {
+      "Group": "Pressure tag",
+      "Symbol or tag": "PSV",
+      "Meaning": "Pressure safety (relief) valve",
+      "Notes": "Sized per ASME VIII / API 520",
+      "Standard": "ANSI/ISA-5.1; ASME BPVC VIII",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!22",
+      "status": "source_draft",
+      "symbol_id": "7589ddf72340a2cc"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TE",
+      "Meaning": "Temperature element (thermocouple, RTD)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!23",
+      "status": "source_draft",
+      "symbol_id": "0c8b7d854b251fef"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TW",
+      "Meaning": "Thermowell",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!24",
+      "status": "source_draft",
+      "symbol_id": "3102b25c1d71eed4"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TT / TIT",
+      "Meaning": "Temperature transmitter / indicating transmitter",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!25",
+      "status": "source_draft",
+      "symbol_id": "4fc9aae3bdd636eb"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TI",
+      "Meaning": "Temperature indicator",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!26",
+      "status": "source_draft",
+      "symbol_id": "e4579e99b9cd4731"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TIC",
+      "Meaning": "Temperature indicating controller",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!27",
+      "status": "source_draft",
+      "symbol_id": "a8139451f924bada"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TSH / TSHH",
+      "Meaning": "Temperature switch high / high-high",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!28",
+      "status": "source_draft",
+      "symbol_id": "7ee02f094a476b50"
+    },
+    {
+      "Group": "Temperature tag",
+      "Symbol or tag": "TV",
+      "Meaning": "Temperature control valve",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!29",
+      "status": "source_draft",
+      "symbol_id": "60d19279bfb5b868"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FE",
+      "Meaning": "Flow element (orifice plate, venturi)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!30",
+      "status": "source_draft",
+      "symbol_id": "c3a03c3fef69d270"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FT / FIT",
+      "Meaning": "Flow transmitter / indicating transmitter",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!31",
+      "status": "source_draft",
+      "symbol_id": "927af997472ce588"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FI",
+      "Meaning": "Flow indicator",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!32",
+      "status": "source_draft",
+      "symbol_id": "51c296a82028d512"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FIC",
+      "Meaning": "Flow indicating controller",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!33",
+      "status": "source_draft",
+      "symbol_id": "52c5719114e28363"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FQ / FQI",
+      "Meaning": "Flow totaliser / totalising indicator",
+      "Notes": "Q as modifier = integrate",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!34",
+      "status": "source_draft",
+      "symbol_id": "5dd75849693cb2f5"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FFIC",
+      "Meaning": "Flow ratio indicating controller",
+      "Notes": "Second F as modifier = ratio",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!35",
+      "status": "source_draft",
+      "symbol_id": "5d8abc237fcef8d7"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FV",
+      "Meaning": "Flow control valve",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!36",
+      "status": "source_draft",
+      "symbol_id": "348be870a1d26920"
+    },
+    {
+      "Group": "Flow tag",
+      "Symbol or tag": "FO",
+      "Meaning": "Restriction orifice",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!37",
+      "status": "source_draft",
+      "symbol_id": "1524e46b421ad08f"
+    },
+    {
+      "Group": "Level tag",
+      "Symbol or tag": "LG",
+      "Meaning": "Level gauge (glass)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!38",
+      "status": "source_draft",
+      "symbol_id": "d03f7206aad6fb6b"
+    },
+    {
+      "Group": "Level tag",
+      "Symbol or tag": "LT / LIT",
+      "Meaning": "Level transmitter / indicating transmitter",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!39",
+      "status": "source_draft",
+      "symbol_id": "383926c650a3ea22"
+    },
+    {
+      "Group": "Level tag",
+      "Symbol or tag": "LI / LIC",
+      "Meaning": "Level indicator / indicating controller",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!40",
+      "status": "source_draft",
+      "symbol_id": "01897238cdc483cf"
+    },
+    {
+      "Group": "Level tag",
+      "Symbol or tag": "LSH / LSL / LSHH / LSLL",
+      "Meaning": "Level switches",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!41",
+      "status": "source_draft",
+      "symbol_id": "22c13c3176cfd61f"
+    },
+    {
+      "Group": "Level tag",
+      "Symbol or tag": "LV",
+      "Meaning": "Level control valve",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!42",
+      "status": "source_draft",
+      "symbol_id": "a2cde7f87b2fa316"
+    },
+    {
+      "Group": "Analysis tag",
+      "Symbol or tag": "AE / AT / AIT",
+      "Meaning": "Analyser element / transmitter / indicating transmitter",
+      "Notes": "State the component beside the bubble (O2, CO, H2)",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!43",
+      "status": "source_draft",
+      "symbol_id": "729968bbdcc2e655"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "SIC",
+      "Meaning": "Speed indicating controller (variable speed drive)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!44",
+      "status": "source_draft",
+      "symbol_id": "48292c192450a51f"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "HS / HV",
+      "Meaning": "Hand switch / hand (manual) valve",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!45",
+      "status": "source_draft",
+      "symbol_id": "c8322c03c2c0b7db"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "ZSO / ZSC",
+      "Meaning": "Position switch open / closed (valve limit switches)",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!46",
+      "status": "source_draft",
+      "symbol_id": "3d373b2bc063114e"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "XV",
+      "Meaning": "On/off actuated valve (X = unclassified, define on legend)",
+      "Notes": "Many companies use UV or SDV; follow the project standard",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!47",
+      "status": "source_draft",
+      "symbol_id": "b640ed59e3012758"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "BE / BS",
+      "Meaning": "Burner flame detector / flame switch",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!48",
+      "status": "source_draft",
+      "symbol_id": "90141b591033738a"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "VT / VSH",
+      "Meaning": "Vibration transmitter / switch high",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!49",
+      "status": "source_draft",
+      "symbol_id": "a9c45b4edec893d6"
+    },
+    {
+      "Group": "Other tag",
+      "Symbol or tag": "FY, TY, PY",
+      "Meaning": "Relay, compute or convert function",
+      "Notes": "Example: I/P converter on a control valve",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!50",
+      "status": "source_draft",
+      "symbol_id": "86fa1b31164942b0"
+    },
+    {
+      "Group": "Control concept",
+      "Symbol or tag": "Feedback loop",
+      "Meaning": "Transmitter measures, controller compares with set point, final element acts",
+      "Notes": "Draw as FT - FIC - FV joined by signal lines",
+      "Standard": "Common practice",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!51",
+      "status": "source_draft",
+      "symbol_id": "9c467449de8bd696"
+    },
+    {
+      "Group": "Control concept",
+      "Symbol or tag": "Cascade",
+      "Meaning": "Output of a master controller sets the set point of a slave controller",
+      "Notes": "Signal line from master to slave marked SP",
+      "Standard": "Common practice",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!52",
+      "status": "source_draft",
+      "symbol_id": "bff4b0b2a8b7427c"
+    },
+    {
+      "Group": "Control concept",
+      "Symbol or tag": "Interlock",
+      "Meaning": "Diamond with I or a number, linked to the cause-and-effect matrix",
+      "Notes": "Trip lines to the final elements",
+      "Standard": "ANSI/ISA-5.1 / ISA-5.2",
+      "source": "PID_core_elements_glossary.xlsx::Instrumentation and control!53",
+      "status": "source_draft",
+      "symbol_id": "d0bcbb640a5e9aad"
+    }
+  ],
+  "Valves and actuators": [
+    {
+      "Group": "Valve body",
+      "Item": "Gate valve",
+      "How it is drawn": "Two triangles point to point (bow-tie)",
+      "Notes": "General isolation",
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!2",
+      "status": "source_draft",
+      "symbol_id": "3814c1e07b32761c"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Globe valve",
+      "How it is drawn": "Bow-tie with a solid dot at the centre",
+      "Notes": "Throttling; usual control valve body",
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!3",
+      "status": "source_draft",
+      "symbol_id": "c092a96a842c7c65"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Ball valve",
+      "How it is drawn": "Bow-tie with an open circle at the centre",
+      "Notes": "Quarter-turn isolation",
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!4",
+      "status": "source_draft",
+      "symbol_id": "ed57daa84822b988"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Butterfly valve",
+      "How it is drawn": "Two parallel lines with a diagonal line and dot between them",
+      "Notes": "Large lines, low pressure drop",
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!5",
+      "status": "source_draft",
+      "symbol_id": "65f77d54241027c1"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Plug valve",
+      "How it is drawn": "Bow-tie with a small filled diamond or rectangle at the centre",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!6",
+      "status": "source_draft",
+      "symbol_id": "48c9bcc2478b41a1"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Check (non-return) valve",
+      "How it is drawn": "Bow-tie with one half filled, or a line with a flap and flow arrow",
+      "Notes": "Arrow shows the permitted flow direction",
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!7",
+      "status": "source_draft",
+      "symbol_id": "87dd6e7827cdef53"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Three-way valve",
+      "How it is drawn": "Three triangles meeting at a point",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!8",
+      "status": "source_draft",
+      "symbol_id": "85891810b1322b58"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Angle valve",
+      "How it is drawn": "Two triangles at 90 degrees",
+      "Notes": "Common body for relief valves",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!9",
+      "status": "source_draft",
+      "symbol_id": "2aeade245ec49f93"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Needle valve",
+      "How it is drawn": "Bow-tie with an arrow or needle mark",
+      "Notes": "Instrument isolation and fine throttling",
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!10",
+      "status": "source_draft",
+      "symbol_id": "086c95bc275b991b"
+    },
+    {
+      "Group": "Valve body",
+      "Item": "Diaphragm valve",
+      "How it is drawn": "Bow-tie with an arc over the centre",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!11",
+      "status": "source_draft",
+      "symbol_id": "c8a8833962f628cd"
+    },
+    {
+      "Group": "Safety device",
+      "Item": "Pressure safety valve (PSV)",
+      "How it is drawn": "Angle valve with a spring on top",
+      "Notes": "Show set pressure and size beside it",
+      "Standard": "ANSI/ISA-5.1; ASME BPVC VIII",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!12",
+      "status": "source_draft",
+      "symbol_id": "422c1afecfe910cb"
+    },
+    {
+      "Group": "Safety device",
+      "Item": "Rupture disc",
+      "How it is drawn": "Curved disc between two short lines",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!13",
+      "status": "source_draft",
+      "symbol_id": "f09957af94ad12f3"
+    },
+    {
+      "Group": "Safety device",
+      "Item": "Flame arrestor",
+      "How it is drawn": "Box with internal lines or the letter F in the line",
+      "Notes": null,
+      "Standard": "Common practice",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!14",
+      "status": "source_draft",
+      "symbol_id": "fd5ca60670153e55"
+    },
+    {
+      "Group": "Actuator",
+      "Item": "Hand (manual)",
+      "How it is drawn": "T-shaped stem on the valve",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!15",
+      "status": "source_draft",
+      "symbol_id": "88ea46b8f3ee8fb5"
+    },
+    {
+      "Group": "Actuator",
+      "Item": "Diaphragm (pneumatic)",
+      "How it is drawn": "Half-dome on a stem above the valve",
+      "Notes": "Most control valves",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!16",
+      "status": "source_draft",
+      "symbol_id": "cb661a98163aaf9a"
+    },
+    {
+      "Group": "Actuator",
+      "Item": "Piston / cylinder",
+      "How it is drawn": "Rectangle with a piston line on a stem",
+      "Notes": "On/off and shutdown valves",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!17",
+      "status": "source_draft",
+      "symbol_id": "71633d5a9fbadeac"
+    },
+    {
+      "Group": "Actuator",
+      "Item": "Electric motor",
+      "How it is drawn": "Circle with M on a stem",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!18",
+      "status": "source_draft",
+      "symbol_id": "78c634c332388cac"
+    },
+    {
+      "Group": "Actuator",
+      "Item": "Solenoid",
+      "How it is drawn": "Square with S on a stem",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!19",
+      "status": "source_draft",
+      "symbol_id": "0f78c050349c3810"
+    },
+    {
+      "Group": "Fail position",
+      "Item": "FC / FO",
+      "How it is drawn": "Fail closed / fail open on loss of signal or supply",
+      "Notes": "Write beneath every actuated valve",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!20",
+      "status": "source_draft",
+      "symbol_id": "2f1c5ca558269049"
+    },
+    {
+      "Group": "Fail position",
+      "Item": "FL / FI",
+      "How it is drawn": "Fail locked (last position) / fail indeterminate",
+      "Notes": null,
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!21",
+      "status": "source_draft",
+      "symbol_id": "6fbfc4a77a658df1"
+    },
+    {
+      "Group": "Self-acting",
+      "Item": "Pressure regulator (PCV)",
+      "How it is drawn": "Valve with diaphragm actuator and a sensing line to the upstream or downstream side",
+      "Notes": "Sensing line side shows back-pressure or reducing duty",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!22",
+      "status": "source_draft",
+      "symbol_id": "66ae78d1adc32ef5"
+    },
+    {
+      "Group": "Fitting",
+      "Item": "Reducer",
+      "How it is drawn": "Small trapezoid in the line",
+      "Notes": "Shows a line size change",
+      "Standard": "ISO 10628-2 / PIP PIC001",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!23",
+      "status": "source_draft",
+      "symbol_id": "7a7c7c3dd08944d3"
+    },
+    {
+      "Group": "Fitting",
+      "Item": "Spectacle blind / spade",
+      "How it is drawn": "Figure-8 across the line",
+      "Notes": "Positive isolation",
+      "Standard": "ISO 10628-2 / PIP PIC001",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!24",
+      "status": "source_draft",
+      "symbol_id": "59abe3cc8e1890c7"
+    },
+    {
+      "Group": "Fitting",
+      "Item": "Strainer (Y or basket)",
+      "How it is drawn": "Y-branch or small box with a dashed screen",
+      "Notes": null,
+      "Standard": "ISO 10628-2 / PIP PIC001",
+      "source": "PID_core_elements_glossary.xlsx::Valves and actuators!25",
+      "status": "source_draft",
+      "symbol_id": "8b0a00e3c44106fa"
+    }
+  ],
+  "Line conventions": [
+    {
+      "Group": "Process line",
+      "Line or mark": "Major (primary) process line",
+      "How it is drawn": "Thick solid line",
+      "Used for": "Main process flow",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!2",
+      "status": "source_draft",
+      "symbol_id": "1eadf183dd6de3e4"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Minor (secondary) process or utility line",
+      "How it is drawn": "Thin solid line",
+      "Used for": "Utilities, drains, vents, small branches",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!3",
+      "status": "source_draft",
+      "symbol_id": "9e433bd322b8fc56"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Flow direction",
+      "How it is drawn": "Arrowhead on the line, at changes of direction and at equipment",
+      "Used for": "Every line",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!4",
+      "status": "source_draft",
+      "symbol_id": "1a019ac3aa6096b8"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Future or existing line",
+      "How it is drawn": "Dashed or phantom line, as defined on the project legend",
+      "Used for": "Brownfield and phased projects",
+      "Standard": "Project legend",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!5",
+      "status": "source_draft",
+      "symbol_id": "8e863aae73caeeb9"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Jacketed line",
+      "How it is drawn": "Double line around the pipe",
+      "Used for": "Heated or cooled pipe",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!6",
+      "status": "source_draft",
+      "symbol_id": "b611d95cf8b09d8d"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Heat-traced line",
+      "How it is drawn": "Thin dashed line parallel to the pipe; E or S for electric or steam",
+      "Used for": "Freeze or viscosity protection",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!7",
+      "status": "source_draft",
+      "symbol_id": "aa7142dede02c2e4"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Insulation",
+      "How it is drawn": "Short hatch mark or code in the line number",
+      "Used for": "Hot, cold or personnel protection",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!8",
+      "status": "source_draft",
+      "symbol_id": "97c8a55ac555e631"
+    },
+    {
+      "Group": "Process line",
+      "Line or mark": "Line crossing",
+      "How it is drawn": "Lines cross without a dot (no connection); a dot or tee shows a junction",
+      "Used for": "Vertical line usually breaks",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!9",
+      "status": "source_draft",
+      "symbol_id": "00ef788d7c76b2b8"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Instrument supply or connection to process",
+      "How it is drawn": "Thin solid line",
+      "Used for": "Impulse lines, instrument air supply",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!10",
+      "status": "source_draft",
+      "symbol_id": "c66a1d3fa5a3db82"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Undefined signal",
+      "How it is drawn": "Thin solid line with single slash marks",
+      "Used for": "Signal type not yet decided",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!11",
+      "status": "source_draft",
+      "symbol_id": "2f8409f385de7257"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Pneumatic signal",
+      "How it is drawn": "Thin solid line with double slash marks (//)",
+      "Used for": "Air signal to control valves",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!12",
+      "status": "source_draft",
+      "symbol_id": "a6d127228e492416"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Electrical signal",
+      "How it is drawn": "Thin dashed line (older drawings: solid line with triple slash marks)",
+      "Used for": "4-20 mA, discrete signals",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!13",
+      "status": "source_draft",
+      "symbol_id": "f5f3080b7048e05d"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Capillary tube",
+      "How it is drawn": "Thin solid line with small crosses (X)",
+      "Used for": "Filled-system sensors, remote seals",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!14",
+      "status": "source_draft",
+      "symbol_id": "b21b53904c30cd4b"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Hydraulic signal",
+      "How it is drawn": "Thin solid line with L marks",
+      "Used for": "Hydraulic actuators",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!15",
+      "status": "source_draft",
+      "symbol_id": "6dd6d0be0af5ca66"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Electromagnetic or sonic signal, guided",
+      "How it is drawn": "Thin solid line with a sine-wave mark",
+      "Used for": "Guided wave, fibre",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!16",
+      "status": "source_draft",
+      "symbol_id": "7342f60935224bd0"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Electromagnetic or sonic signal, unguided",
+      "How it is drawn": "Sine-wave marks without a line",
+      "Used for": "Radio, wireless instruments",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!17",
+      "status": "source_draft",
+      "symbol_id": "e29553e572752a92"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Internal system link (software or data link)",
+      "How it is drawn": "Line with small open circles (-o-o-)",
+      "Used for": "DCS / PLC communication, soft signals",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!18",
+      "status": "source_draft",
+      "symbol_id": "d396f5593be18fd8"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Mechanical link",
+      "How it is drawn": "Line with small solid circles",
+      "Used for": "Linkages, shafts",
+      "Standard": "ANSI/ISA-5.1",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!19",
+      "status": "source_draft",
+      "symbol_id": "6f89d3ec8bcc3907"
+    },
+    {
+      "Group": "Signal line",
+      "Line or mark": "Safety trip signal",
+      "How it is drawn": "Electrical signal line, often coloured or labelled; from an interlock diamond",
+      "Used for": "Shutdown actions",
+      "Standard": "Project legend",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!20",
+      "status": "source_draft",
+      "symbol_id": "df6bce4aefb1654f"
+    },
+    {
+      "Group": "Annotation",
+      "Line or mark": "Line number",
+      "How it is drawn": "Size - service - sequence - pipe spec - insulation, e.g. 8\"-SG-4029-SS2-H",
+      "Used for": "Every line; format set by the project",
+      "Standard": "Project legend; sizes per ASME B36.10M, spec per ASME B31.3",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!21",
+      "status": "source_draft",
+      "symbol_id": "9116c815d3fc4a8e"
+    },
+    {
+      "Group": "Annotation",
+      "Line or mark": "Specification break",
+      "How it is drawn": "Short line across the pipe with the two spec codes either side",
+      "Used for": "Change of pipe class or material",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!22",
+      "status": "source_draft",
+      "symbol_id": "7b247cbc488825e9"
+    },
+    {
+      "Group": "Annotation",
+      "Line or mark": "Off-page connector",
+      "How it is drawn": "Arrow-shaped box with drawing number, line number and origin or destination",
+      "Used for": "Lines continuing on another sheet",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!23",
+      "status": "source_draft",
+      "symbol_id": "f747ab2703ff54fb"
+    },
+    {
+      "Group": "Annotation",
+      "Line or mark": "Battery limit",
+      "How it is drawn": "Dash-dot line with the label B.L.",
+      "Used for": "Edge of the plant or package scope",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!24",
+      "status": "source_draft",
+      "symbol_id": "c427d5501541ccf4"
+    },
+    {
+      "Group": "Annotation",
+      "Line or mark": "Vendor package limit",
+      "How it is drawn": "Dash-dot rectangle",
+      "Used for": "Scope of a packaged unit",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!25",
+      "status": "source_draft",
+      "symbol_id": "f1225435ee40200a"
+    },
+    {
+      "Group": "Annotation",
+      "Line or mark": "Slope",
+      "How it is drawn": "Arrow or triangle with the gradient",
+      "Used for": "Lines that must drain",
+      "Standard": "PIP PIC001 / ISO 10628-2",
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!26",
+      "status": "source_draft",
+      "symbol_id": "e91b361c3eca39c3"
+    },
+    {
+      "Group": "Note",
+      "Line or mark": null,
+      "How it is drawn": "The request describes dashed or dotted lines for pneumatic, electric or signal links. ISA-5.1 distinguishes them: electrical is dashed, pneumatic is solid with double slash marks, data links carry small circles.",
+      "Used for": null,
+      "Standard": null,
+      "source": "PID_core_elements_glossary.xlsx::Line conventions!28",
+      "status": "source_draft",
+      "symbol_id": "bcbf687ab1514d1e"
+    }
+  ],
+  "ISA-5.1 letters": [
+    {
+      "Position": "First letter",
+      "Letter": "A",
+      "Meaning": "Analysis (composition, e.g. O2, CO, H2)",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!2",
+      "status": "source_draft",
+      "symbol_id": "c732eb39c4ee8238"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "B",
+      "Meaning": "Burner, combustion (flame)",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!3",
+      "status": "source_draft",
+      "symbol_id": "5fe946e205f25e09"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "C",
+      "Meaning": "User's choice",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!4",
+      "status": "source_draft",
+      "symbol_id": "a1e1ee3d4702be1f"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "D",
+      "Meaning": "User's choice",
+      "Modifier meaning": "Differential (PD = pressure differential)",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!5",
+      "status": "source_draft",
+      "symbol_id": "d7f3f7aae175f9e3"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "E",
+      "Meaning": "Voltage",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!6",
+      "status": "source_draft",
+      "symbol_id": "bbb73d0efb20a793"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "F",
+      "Meaning": "Flow rate",
+      "Modifier meaning": "Ratio (FF = flow ratio)",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!7",
+      "status": "source_draft",
+      "symbol_id": "083ba1133387b7ba"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "G",
+      "Meaning": "User's choice",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!8",
+      "status": "source_draft",
+      "symbol_id": "dea6076bf0455fae"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "H",
+      "Meaning": "Hand (manual)",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!9",
+      "status": "source_draft",
+      "symbol_id": "2e74e82b5667b359"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "I",
+      "Meaning": "Current (electrical)",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!10",
+      "status": "source_draft",
+      "symbol_id": "62e403ef5f27c33a"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "J",
+      "Meaning": "Power",
+      "Modifier meaning": "Scan",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!11",
+      "status": "source_draft",
+      "symbol_id": "444189ecb3d76c5d"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "K",
+      "Meaning": "Time, time schedule",
+      "Modifier meaning": "Time rate of change",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!12",
+      "status": "source_draft",
+      "symbol_id": "f2d2b2bd388fc353"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "L",
+      "Meaning": "Level",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!13",
+      "status": "source_draft",
+      "symbol_id": "ce637482ababe7c7"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "M",
+      "Meaning": "User's choice",
+      "Modifier meaning": "Momentary",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!14",
+      "status": "source_draft",
+      "symbol_id": "3c765ec40e80f47d"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "N",
+      "Meaning": "User's choice",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!15",
+      "status": "source_draft",
+      "symbol_id": "3a20cc67278f5e72"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "O",
+      "Meaning": "User's choice",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!16",
+      "status": "source_draft",
+      "symbol_id": "6730ded6ba76ddf7"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "P",
+      "Meaning": "Pressure, vacuum",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!17",
+      "status": "source_draft",
+      "symbol_id": "40988baa3a9a9762"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "Q",
+      "Meaning": "Quantity",
+      "Modifier meaning": "Integrate, totalise (FQ = flow total)",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!18",
+      "status": "source_draft",
+      "symbol_id": "6de3da124bcda06f"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "R",
+      "Meaning": "Radiation",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!19",
+      "status": "source_draft",
+      "symbol_id": "1dcb4b4620b1e0cf"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "S",
+      "Meaning": "Speed, frequency",
+      "Modifier meaning": "Safety (PSV, TSHH)",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!20",
+      "status": "source_draft",
+      "symbol_id": "62d66509840d15e3"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "T",
+      "Meaning": "Temperature",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!21",
+      "status": "source_draft",
+      "symbol_id": "c739160f0a7d8145"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "U",
+      "Meaning": "Multivariable",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!22",
+      "status": "source_draft",
+      "symbol_id": "56d7afb94d5c45d6"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "V",
+      "Meaning": "Vibration, mechanical analysis",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!23",
+      "status": "source_draft",
+      "symbol_id": "d4235d318f46d405"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "W",
+      "Meaning": "Weight, force",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!24",
+      "status": "source_draft",
+      "symbol_id": "dcd5a756e8601af0"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "X",
+      "Meaning": "Unclassified (define on legend; here XV = on/off shutdown valve)",
+      "Modifier meaning": "X axis",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!25",
+      "status": "source_draft",
+      "symbol_id": "0c23c60c0f7b03d7"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "Y",
+      "Meaning": "Event, state, presence",
+      "Modifier meaning": "Y axis",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!26",
+      "status": "source_draft",
+      "symbol_id": "e72159b0f1f759b7"
+    },
+    {
+      "Position": "First letter",
+      "Letter": "Z",
+      "Meaning": "Position, dimension",
+      "Modifier meaning": "Z axis",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!27",
+      "status": "source_draft",
+      "symbol_id": "e986b502d9b7a5a2"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "A",
+      "Meaning": "Alarm",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!28",
+      "status": "source_draft",
+      "symbol_id": "28056f4c2df947f2"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "C",
+      "Meaning": "Control",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!29",
+      "status": "source_draft",
+      "symbol_id": "bd5ba676a58af83b"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "E",
+      "Meaning": "Sensor, primary element",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!30",
+      "status": "source_draft",
+      "symbol_id": "b4d3dd1e4fcabd7f"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "G",
+      "Meaning": "Glass, gauge, viewing device",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!31",
+      "status": "source_draft",
+      "symbol_id": "808d8ab26fd8970a"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "H",
+      "Meaning": null,
+      "Modifier meaning": "High (HH = high-high)",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!32",
+      "status": "source_draft",
+      "symbol_id": "2fe19d00463c5a79"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "I",
+      "Meaning": "Indicate",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!33",
+      "status": "source_draft",
+      "symbol_id": "d0a3c48e1559970d"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "K",
+      "Meaning": "Control station",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!34",
+      "status": "source_draft",
+      "symbol_id": "e984a521c782f514"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "L",
+      "Meaning": "Light (pilot lamp)",
+      "Modifier meaning": "Low (LL = low-low)",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!35",
+      "status": "source_draft",
+      "symbol_id": "6b700ff8efa2b9c1"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "M",
+      "Meaning": null,
+      "Modifier meaning": "Middle, intermediate",
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!36",
+      "status": "source_draft",
+      "symbol_id": "3b1aad72722c69ae"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "O",
+      "Meaning": "Orifice, restriction",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!37",
+      "status": "source_draft",
+      "symbol_id": "06cc2998e61fdfbd"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "P",
+      "Meaning": "Point (test connection)",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!38",
+      "status": "source_draft",
+      "symbol_id": "b169ea5757af6c90"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "R",
+      "Meaning": "Record",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!39",
+      "status": "source_draft",
+      "symbol_id": "4f7683807f3886bf"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "S",
+      "Meaning": "Switch",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!40",
+      "status": "source_draft",
+      "symbol_id": "cae599cb26786471"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "T",
+      "Meaning": "Transmit",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!41",
+      "status": "source_draft",
+      "symbol_id": "e46fb52ed456c454"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "U",
+      "Meaning": "Multifunction",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!42",
+      "status": "source_draft",
+      "symbol_id": "f05b9026f7503f02"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "V",
+      "Meaning": "Valve, damper, louver",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!43",
+      "status": "source_draft",
+      "symbol_id": "bea5f7780524e18f"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "W",
+      "Meaning": "Well, probe",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!44",
+      "status": "source_draft",
+      "symbol_id": "39c1ea894367f240"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "X",
+      "Meaning": "Unclassified",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!45",
+      "status": "source_draft",
+      "symbol_id": "506cea9a3e16ef94"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "Y",
+      "Meaning": "Relay, compute, convert",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!46",
+      "status": "source_draft",
+      "symbol_id": "96b7c1cf81b6136c"
+    },
+    {
+      "Position": "Succeeding letter",
+      "Letter": "Z",
+      "Meaning": "Driver, actuator, final control element",
+      "Modifier meaning": null,
+      "source": "PID_core_elements_glossary.xlsx::ISA-5.1 letters!47",
+      "status": "source_draft",
+      "symbol_id": "18e588fe1a4d37b4"
+    }
+  ]
+}

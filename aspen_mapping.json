@@ -1,0 +1,137 @@
+[
+  {
+    "block": "DRYER",
+    "candidate_asset": "SC-101",
+    "stream": "2",
+    "temperature_C": 120,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "DECOMP",
+    "candidate_asset": "R-101",
+    "stream": "2-1",
+    "temperature_C": 500,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "PYRO",
+    "candidate_asset": "R-101",
+    "stream": "2-3",
+    "temperature_C": 500,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "CYCLONE",
+    "candidate_asset": "TBD",
+    "stream": "13",
+    "temperature_C": 500,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "SEP",
+    "candidate_asset": "TBD",
+    "stream": "14",
+    "temperature_C": null,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "MIXER",
+    "candidate_asset": "TBD",
+    "stream": "R-PD",
+    "temperature_C": 487,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "OXID",
+    "candidate_asset": "R-401",
+    "stream": "OXI-PD",
+    "temperature_C": 1100,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "RED",
+    "candidate_asset": "R-401",
+    "stream": "S1",
+    "temperature_C": 800,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "B10",
+    "candidate_asset": "E-401",
+    "stream": "15",
+    "temperature_C": 450,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "B1",
+    "candidate_asset": "PK-402",
+    "stream": "S2",
+    "temperature_C": 708,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "B2",
+    "candidate_asset": "PK-402",
+    "stream": "S4",
+    "temperature_C": 50,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "B5",
+    "candidate_asset": "PK-402",
+    "stream": "WAT",
+    "temperature_C": 50,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "B4",
+    "candidate_asset": "PK-501",
+    "stream": "S7",
+    "temperature_C": 30,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "ENGINE",
+    "candidate_asset": "PK-501",
+    "stream": "S8",
+    "temperature_C": 686,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  },
+  {
+    "block": "B16",
+    "candidate_asset": "TBD",
+    "stream": "S15",
+    "temperature_C": 588,
+    "source": "Aspen screenshot image(20261116-180302).png / image(20261116-180323).png",
+    "status": "mapping_inference_unapproved",
+    "basis": "Functional resemblance; physical equipment mapping requires review"
+  }
+]

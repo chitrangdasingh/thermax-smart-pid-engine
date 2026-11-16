@@ -1,0 +1,1676 @@
+{
+  "Equipment": [
+    {
+      "tag": "PK-101",
+      "name": "Biomass Handling System",
+      "type": "package",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!2",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "H-101",
+      "name": "Service Hopper",
+      "type": "hopper",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!3",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "SC-101",
+      "name": "Metering Screw with Band Heater",
+      "type": "screw_heated",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!4",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "E-101",
+      "name": "Shot Heater (Inductive)",
+      "type": "electric_heater_vessel",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!5",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "R-101",
+      "name": "Twin-Screw Auger Pyrolyser",
+      "type": "auger_reactor",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!6",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "E-301",
+      "name": "Char and Heat-Carrier Cooler",
+      "type": "solids_cooler",
+      "area": 300,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!7",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "S-301",
+      "name": "Char/Shot Separator",
+      "type": "solids_separator",
+      "area": 300,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!8",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PK-401",
+      "name": "LOx / VPSA Oxygen Supply",
+      "type": "package",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!9",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "E-401",
+      "name": "Oxygen Pre-heater",
+      "type": "heat_exchanger",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!10",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "R-401",
+      "name": "Gasifier (POX + Char Bed)",
+      "type": "gasifier",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!11",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PK-402",
+      "name": "Syngas Cleaning",
+      "type": "package",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!12",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PK-501",
+      "name": "Gas Engine Genset",
+      "type": "package",
+      "area": 500,
+      "source": "PID_gasifier_mode_lists.xlsx::Equipment!13",
+      "status": "candidate_unapproved"
+    }
+  ],
+  "Line list": [
+    {
+      "line_no": "BM-1014",
+      "pfd_stream": "0",
+      "service": "BM",
+      "phase": "solid",
+      "from": "PK-101",
+      "to": "H-101",
+      "flow_kgh": 354,
+      "temp_C": 25,
+      "press_bar": 1,
+      "size": "n/a (solids)",
+      "description": "Biomass to hopper (not numbered on PFD)",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!2",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "BM-1015",
+      "pfd_stream": "1",
+      "service": "BM",
+      "phase": "solid",
+      "from": "H-101",
+      "to": "SC-101",
+      "flow_kgh": 354,
+      "temp_C": 25,
+      "press_bar": 1,
+      "size": "n/a (solids)",
+      "description": "Biomass feed",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!3",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "BM-1017",
+      "pfd_stream": "2",
+      "service": "BM",
+      "phase": "solid",
+      "from": "SC-101",
+      "to": "R-101",
+      "flow_kgh": 354,
+      "temp_C": 120,
+      "press_bar": 1,
+      "size": "n/a (solids)",
+      "description": "Dried biomass",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!4",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "SH-1019",
+      "pfd_stream": "3",
+      "service": "SH",
+      "phase": "solid",
+      "from": "E-101",
+      "to": "R-101",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "n/a (solids)",
+      "description": "Hot steel shots - not defined for gasifier mode on PFD, to be confirmed",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!5",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "CH-1021",
+      "pfd_stream": "9",
+      "service": "CH",
+      "phase": "solid",
+      "from": "R-101",
+      "to": "E-301",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "n/a (solids)",
+      "description": "Char + shots - not defined for gasifier mode on PFD, to be confirmed",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!6",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "CH-3002",
+      "pfd_stream": "10",
+      "service": "CH",
+      "phase": "solid",
+      "from": "E-301",
+      "to": "S-301",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "n/a (solids)",
+      "description": "Cooled char + shots - not defined for gasifier mode on PFD, to be confirmed",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!7",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "SH-3004",
+      "pfd_stream": "12",
+      "service": "SH",
+      "phase": "solid",
+      "from": "S-301",
+      "to": "E-101",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "n/a (solids)",
+      "description": "Shots recycle - not defined for gasifier mode on PFD, to be confirmed",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!8",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "4\"-PG-1022-SS2-H",
+      "pfd_stream": "13",
+      "service": "PG",
+      "phase": "gas",
+      "from": "R-101",
+      "to": "R-401",
+      "flow_kgh": 212,
+      "temp_C": 450,
+      "press_bar": 0.9,
+      "size": "4\"",
+      "description": "Pyrolysis gases to POX (gasifier mode)",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!9",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "CH-1024",
+      "pfd_stream": "14",
+      "service": "CH",
+      "phase": "solid",
+      "from": "R-101",
+      "to": "R-401",
+      "flow_kgh": 142,
+      "temp_C": 450,
+      "press_bar": 0.9,
+      "size": "n/a (solids)",
+      "description": "Char to gasifier (gasifier mode)",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!10",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "0.75\"-OX-4008-SS1-N",
+      "pfd_stream": "15",
+      "service": "OX",
+      "phase": "gas",
+      "from": "PK-401",
+      "to": "E-401",
+      "flow_kgh": 117,
+      "temp_C": 40,
+      "press_bar": 5,
+      "size": "0.75\"",
+      "description": "106 kg/h O2 + 11 kg/h N2",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!11",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "1\"-OX-4011-SS1-H",
+      "pfd_stream": "16",
+      "service": "OX",
+      "phase": "gas",
+      "from": "E-401",
+      "to": "R-401",
+      "flow_kgh": 117,
+      "temp_C": 150,
+      "press_bar": 5,
+      "size": "1\"",
+      "description": "Pre-heated oxidant",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!12",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "8\"-SG-4015-SS2-H",
+      "pfd_stream": "17",
+      "service": "SG",
+      "phase": "gas",
+      "from": "R-401",
+      "to": "PK-402",
+      "flow_kgh": 465,
+      "temp_C": 450,
+      "press_bar": 0.9,
+      "size": "8\"",
+      "description": "Raw syngas",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!13",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "TBD-SG-4018-CS1-N",
+      "pfd_stream": "18",
+      "service": "SG",
+      "phase": "gas",
+      "from": "PK-402",
+      "to": "PK-501",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "TBD - data missing",
+      "description": "Clean syngas (flow not on PFD)",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!14",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "TBD-EG-5001-CS1-N",
+      "pfd_stream": "19",
+      "service": "EG",
+      "phase": "gas",
+      "from": "PK-501",
+      "to": "E-401",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "TBD - data missing",
+      "description": "Engine exhaust to pre-heater (flow not on PFD)",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!15",
+      "status": "candidate_unapproved"
+    },
+    {
+      "line_no": "TBD-EG-4021-CS1-N",
+      "pfd_stream": "19A",
+      "service": "EG",
+      "phase": "gas",
+      "from": "E-401",
+      "to": "SC-101",
+      "flow_kgh": null,
+      "temp_C": null,
+      "press_bar": null,
+      "size": "TBD - data missing",
+      "description": "Exhaust to dryer header (routing to be verified)",
+      "source": "PID_gasifier_mode_lists.xlsx::Line list!16",
+      "status": "candidate_unapproved"
+    }
+  ],
+  "Instrument index": [
+    {
+      "tag": "LSH-1001",
+      "function": "LSH",
+      "description": "High level switch",
+      "location": "FIELD",
+      "attached_to": "H-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!2",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "LSL-1002",
+      "function": "LSL",
+      "description": "Low level switch",
+      "location": "FIELD",
+      "attached_to": "H-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!3",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "SIC-1003",
+      "function": "SIC",
+      "description": "Screw speed control (VFD)",
+      "location": "DCS",
+      "attached_to": "SC-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!4",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TIC-1004",
+      "function": "TIC",
+      "description": "Band heater temperature control",
+      "location": "DCS",
+      "attached_to": "SC-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!5",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TSHH-1005",
+      "function": "TSHH",
+      "description": "Heater over-temperature trip",
+      "location": "SIS",
+      "attached_to": "SC-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!6",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TIC-1006",
+      "function": "TIC",
+      "description": "Shot temperature control (inductive heater)",
+      "location": "DCS",
+      "attached_to": "E-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!7",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TSHH-1007",
+      "function": "TSHH",
+      "description": "Over-temperature trip",
+      "location": "SIS",
+      "attached_to": "E-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!8",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "LSL-1008",
+      "function": "LSL",
+      "description": "Low shot level switch",
+      "location": "FIELD",
+      "attached_to": "E-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!9",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-1009",
+      "function": "TI",
+      "description": "Zone temperatures T1-T4 (4 elements)",
+      "location": "DCS",
+      "attached_to": "R-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!10",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TIC-1010",
+      "function": "TIC",
+      "description": "Reactor heater temperature control",
+      "location": "DCS",
+      "attached_to": "R-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!11",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "SIC-1011",
+      "function": "SIC",
+      "description": "Auger speed control (VFD)",
+      "location": "DCS",
+      "attached_to": "R-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!12",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PI-1012",
+      "function": "PI",
+      "description": "Reactor pressure",
+      "location": "DCS",
+      "attached_to": "R-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!13",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PSHH-1013",
+      "function": "PSHH",
+      "description": "High pressure trip",
+      "location": "SIS",
+      "attached_to": "R-101",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!14",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-3001",
+      "function": "TI",
+      "description": "Solids outlet temperature",
+      "location": "DCS",
+      "attached_to": "E-301",
+      "area": 300,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!15",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TIC-4001",
+      "function": "TIC",
+      "description": "Outlet temperature control",
+      "location": "DCS",
+      "attached_to": "E-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!16",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-4002",
+      "function": "TI",
+      "description": "POX zone temperature",
+      "location": "DCS",
+      "attached_to": "R-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!17",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-4003",
+      "function": "TI",
+      "description": "Char bed temperature",
+      "location": "DCS",
+      "attached_to": "R-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!18",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PDI-4004",
+      "function": "PDI",
+      "description": "Char bed pressure drop",
+      "location": "DCS",
+      "attached_to": "R-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!19",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PI-4005",
+      "function": "PI",
+      "description": "Gasifier pressure",
+      "location": "DCS",
+      "attached_to": "R-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!20",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TSHH-4006",
+      "function": "TSHH",
+      "description": "High temperature trip (closes oxidant XV)",
+      "location": "SIS",
+      "attached_to": "R-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!21",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PSV-4007",
+      "function": "PSV",
+      "description": "Pressure safety valve",
+      "location": "FIELD",
+      "attached_to": "R-401",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!22",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-3003",
+      "function": "TI",
+      "description": "Line temperature, line CH-3002",
+      "location": "DCS",
+      "attached_to": "CH-3002",
+      "area": 300,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!23",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "FT-4012",
+      "function": "FT",
+      "description": "Flow transmitter, line 1\"-OX-4011-SS1-H",
+      "location": "FIELD",
+      "attached_to": "1\"-OX-4011-SS1-H",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!24",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "FIC-4012",
+      "function": "FIC",
+      "description": "Flow controller, line 1\"-OX-4011-SS1-H",
+      "location": "DCS",
+      "attached_to": "1\"-OX-4011-SS1-H",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!25",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-4016",
+      "function": "TI",
+      "description": "Line temperature, line 8\"-SG-4015-SS2-H",
+      "location": "DCS",
+      "attached_to": "8\"-SG-4015-SS2-H",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!26",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "AI-4017",
+      "function": "AI",
+      "description": "Gas analyser (composition), line 8\"-SG-4015-SS2-H",
+      "location": "DCS",
+      "attached_to": "8\"-SG-4015-SS2-H",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!27",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "TI-5002",
+      "function": "TI",
+      "description": "Line temperature, line TBD-EG-5001-CS1-N",
+      "location": "DCS",
+      "attached_to": "TBD-EG-5001-CS1-N",
+      "area": 500,
+      "source": "PID_gasifier_mode_lists.xlsx::Instrument index!28",
+      "status": "candidate_unapproved"
+    }
+  ],
+  "Valve list": [
+    {
+      "tag": "PSV-4007",
+      "type": "Pressure safety valve",
+      "line": "R-401",
+      "size": "TBD",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!2",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "SG-1016",
+      "type": "Slide gate (solids)",
+      "line": "BM-1015",
+      "size": "TBD",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!3",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "RV-1018",
+      "type": "Rotary airlock valve (solids)",
+      "line": "BM-1017",
+      "size": "TBD",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!4",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "SG-1020",
+      "type": "Slide gate (solids)",
+      "line": "SH-1019",
+      "size": "TBD",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!5",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "XV-1023",
+      "type": "On/off shutdown valve",
+      "line": "4\"-PG-1022-SS2-H",
+      "size": "4\"",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!6",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "RV-1025",
+      "type": "Rotary airlock valve (solids)",
+      "line": "CH-1024",
+      "size": "TBD",
+      "area": 100,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!7",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "HV-4009",
+      "type": "Manual isolation valve",
+      "line": "0.75\"-OX-4008-SS1-N",
+      "size": "0.75\"",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!8",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "PCV-4010",
+      "type": "Self-acting pressure regulator",
+      "line": "0.75\"-OX-4008-SS1-N",
+      "size": "0.75\"",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!9",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "FV-4012",
+      "type": "Flow control valve",
+      "line": "1\"-OX-4011-SS1-H",
+      "size": "1\"",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!10",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "XV-4013",
+      "type": "On/off shutdown valve",
+      "line": "1\"-OX-4011-SS1-H",
+      "size": "1\"",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!11",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "CK-4014",
+      "type": "Check valve",
+      "line": "1\"-OX-4011-SS1-H",
+      "size": "1\"",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!12",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "HV-4019",
+      "type": "Manual isolation valve",
+      "line": "TBD-SG-4018-CS1-N",
+      "size": "TBD",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!13",
+      "status": "candidate_unapproved"
+    },
+    {
+      "tag": "XV-4020",
+      "type": "On/off shutdown valve",
+      "line": "TBD-SG-4018-CS1-N",
+      "size": "TBD",
+      "area": 400,
+      "source": "PID_gasifier_mode_lists.xlsx::Valve list!14",
+      "status": "candidate_unapproved"
+    }
+  ],
+  "BOM": [
+    {
+      "category": "Equipment",
+      "tag": "PK-101",
+      "description": "Biomass Handling System",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!2",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "H-101",
+      "description": "Service Hopper",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!3",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "SC-101",
+      "description": "Metering Screw with Band Heater",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!4",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "E-101",
+      "description": "Shot Heater (Inductive)",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!5",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "R-101",
+      "description": "Twin-Screw Auger Pyrolyser",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!6",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "E-301",
+      "description": "Char and Heat-Carrier Cooler",
+      "area": 300,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!7",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "S-301",
+      "description": "Char/Shot Separator",
+      "area": 300,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!8",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "PK-401",
+      "description": "LOx / VPSA Oxygen Supply",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!9",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "E-401",
+      "description": "Oxygen Pre-heater",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!10",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "R-401",
+      "description": "Gasifier (POX + Char Bed)",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!11",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "PK-402",
+      "description": "Syngas Cleaning",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!12",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Equipment",
+      "tag": "PK-501",
+      "description": "Gas Engine Genset",
+      "area": 500,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!13",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "PSV-4007",
+      "description": "Pressure safety valve | TBD | line R-401",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!14",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "SG-1016",
+      "description": "Slide gate (solids) | TBD | line BM-1015",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!15",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "RV-1018",
+      "description": "Rotary airlock valve (solids) | TBD | line BM-1017",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!16",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "SG-1020",
+      "description": "Slide gate (solids) | TBD | line SH-1019",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!17",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "XV-1023",
+      "description": "On/off shutdown valve | 4\" | line 4\"-PG-1022-SS2-H",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!18",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "RV-1025",
+      "description": "Rotary airlock valve (solids) | TBD | line CH-1024",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!19",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "HV-4009",
+      "description": "Manual isolation valve | 0.75\" | line 0.75\"-OX-4008-SS1-N",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!20",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "PCV-4010",
+      "description": "Self-acting pressure regulator | 0.75\" | line 0.75\"-OX-4008-SS1-N",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!21",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "FV-4012",
+      "description": "Flow control valve | 1\" | line 1\"-OX-4011-SS1-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!22",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "XV-4013",
+      "description": "On/off shutdown valve | 1\" | line 1\"-OX-4011-SS1-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!23",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "CK-4014",
+      "description": "Check valve | 1\" | line 1\"-OX-4011-SS1-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!24",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "HV-4019",
+      "description": "Manual isolation valve | TBD | line TBD-SG-4018-CS1-N",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!25",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "tag": "XV-4020",
+      "description": "On/off shutdown valve | TBD | line TBD-SG-4018-CS1-N",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!26",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "LSH-1001",
+      "description": "High level switch",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!27",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "LSL-1002",
+      "description": "Low level switch",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!28",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "SIC-1003",
+      "description": "Screw speed control (VFD)",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!29",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TIC-1004",
+      "description": "Band heater temperature control",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!30",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TSHH-1005",
+      "description": "Heater over-temperature trip",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!31",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TIC-1006",
+      "description": "Shot temperature control (inductive heater)",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!32",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TSHH-1007",
+      "description": "Over-temperature trip",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!33",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "LSL-1008",
+      "description": "Low shot level switch",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!34",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-1009",
+      "description": "Zone temperatures T1-T4 (4 elements)",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!35",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TIC-1010",
+      "description": "Reactor heater temperature control",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!36",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "SIC-1011",
+      "description": "Auger speed control (VFD)",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!37",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "PI-1012",
+      "description": "Reactor pressure",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!38",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "PSHH-1013",
+      "description": "High pressure trip",
+      "area": 100,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!39",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-3001",
+      "description": "Solids outlet temperature",
+      "area": 300,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!40",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TIC-4001",
+      "description": "Outlet temperature control",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!41",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-4002",
+      "description": "POX zone temperature",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!42",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-4003",
+      "description": "Char bed temperature",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!43",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "PDI-4004",
+      "description": "Char bed pressure drop",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!44",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "PI-4005",
+      "description": "Gasifier pressure",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!45",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TSHH-4006",
+      "description": "High temperature trip (closes oxidant XV)",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!46",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "PSV-4007",
+      "description": "Pressure safety valve",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!47",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-3003",
+      "description": "Line temperature, line CH-3002",
+      "area": 300,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!48",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "FT-4012",
+      "description": "Flow transmitter, line 1\"-OX-4011-SS1-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!49",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "FIC-4012",
+      "description": "Flow controller, line 1\"-OX-4011-SS1-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!50",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-4016",
+      "description": "Line temperature, line 8\"-SG-4015-SS2-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!51",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "AI-4017",
+      "description": "Gas analyser (composition), line 8\"-SG-4015-SS2-H",
+      "area": 400,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!52",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument",
+      "tag": "TI-5002",
+      "description": "Line temperature, line TBD-EG-5001-CS1-N",
+      "area": 500,
+      "qty": 1,
+      "source": "PID_gasifier_mode_lists.xlsx::BOM!53",
+      "status": "candidate_unapproved"
+    }
+  ],
+  "Legend": [
+    {
+      "category": "ISA first letter",
+      "code": "A",
+      "meaning": "Analysis (composition)",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!2",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "B",
+      "meaning": "Burner / combustion (flame)",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!3",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "F",
+      "meaning": "Flow rate",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!4",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "H",
+      "meaning": "Hand (manual)",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!5",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "L",
+      "meaning": "Level",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!6",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "P",
+      "meaning": "Pressure",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!7",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "PD",
+      "meaning": "Pressure differential",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!8",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "S",
+      "meaning": "Speed / frequency",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!9",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "T",
+      "meaning": "Temperature",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!10",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA first letter",
+      "code": "X",
+      "meaning": "Unclassified (here: on/off shutdown)",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!11",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "I",
+      "meaning": "Indicate",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!12",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "C",
+      "meaning": "Control",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!13",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "T",
+      "meaning": "Transmit",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!14",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "E",
+      "meaning": "Primary element (sensor)",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!15",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "V",
+      "meaning": "Valve / final element",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!16",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "S",
+      "meaning": "Switch",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!17",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "A",
+      "meaning": "Alarm",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!18",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA succeeding letter",
+      "code": "G",
+      "meaning": "Glass / gauge (local view)",
+      "drawing_symbol": "bubble text",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!19",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA modifier",
+      "code": "H / HH",
+      "meaning": "High / high-high",
+      "drawing_symbol": "suffix",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!20",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "ISA modifier",
+      "code": "L / LL",
+      "meaning": "Low / low-low",
+      "drawing_symbol": "suffix",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!21",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument location",
+      "code": "FIELD",
+      "meaning": "Field-mounted discrete instrument",
+      "drawing_symbol": "plain circle",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!22",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument location",
+      "code": "DCS",
+      "meaning": "Shared display / shared control (DCS) accessible to operator",
+      "drawing_symbol": "circle in square with centre line (drawn here as barred circle)",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!23",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Instrument location",
+      "code": "SIS",
+      "meaning": "Safety instrumented function / logic",
+      "drawing_symbol": "diamond in square (drawn here as barred diamond)",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!24",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Line type",
+      "code": "PROCESS",
+      "meaning": "Main process line",
+      "drawing_symbol": "thick solid line",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!25",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Line type",
+      "code": "SOLIDS",
+      "meaning": "Solids transfer (chute / screw / conveyor)",
+      "drawing_symbol": "thick brown line",
+      "standard": "project convention",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!26",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Line type",
+      "code": "UTILITY",
+      "meaning": "Utility line (cooling water)",
+      "drawing_symbol": "thin solid blue line",
+      "standard": "project convention",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!27",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Line type",
+      "code": "SIGNAL",
+      "meaning": "Electrical / instrument signal",
+      "drawing_symbol": "dashed line",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!28",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Line type",
+      "code": "TRIP",
+      "meaning": "Safety trip signal",
+      "drawing_symbol": "red dashed line",
+      "standard": "project convention",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!29",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "HV",
+      "meaning": "Manual isolation valve (gate/ball)",
+      "drawing_symbol": "bow-tie",
+      "standard": "ISA-5.1 / ISO 10628",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!30",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "FV / TV",
+      "meaning": "Control valve with actuator (flow / temperature)",
+      "drawing_symbol": "bow-tie with actuator",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!31",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "PCV",
+      "meaning": "Self-contained pressure regulator",
+      "drawing_symbol": "bow-tie with pressure tap",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!32",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "XV",
+      "meaning": "On/off shutdown valve (actuated)",
+      "drawing_symbol": "bow-tie with piston actuator",
+      "standard": "ANSI/ISA-5.1",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!33",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "CK",
+      "meaning": "Check (non-return) valve",
+      "drawing_symbol": "bow-tie half filled",
+      "standard": "ISA-5.1 / ISO 10628",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!34",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "PSV",
+      "meaning": "Pressure safety (relief) valve",
+      "drawing_symbol": "angle valve with spring",
+      "standard": "ANSI/ISA-5.1 ; ASME BPVC VIII",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!35",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "SG",
+      "meaning": "Slide gate (solids)",
+      "drawing_symbol": "gate symbol",
+      "standard": "project convention",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!36",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Valve",
+      "code": "RV",
+      "meaning": "Rotary airlock valve (solids)",
+      "drawing_symbol": "circle with vanes",
+      "standard": "project convention",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!37",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Fitting",
+      "code": "FA",
+      "meaning": "Flame arrestor",
+      "drawing_symbol": "box with F",
+      "standard": "project convention",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!38",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Line number",
+      "code": "format",
+      "meaning": "size-service-sequence-pipe spec-insulation e.g. 4\"-PV-1004-SS2-H",
+      "drawing_symbol": "text on line",
+      "standard": "project convention (ASME B31.3 piping)",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!39",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "BM",
+      "meaning": "Biomass (solid)",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!40",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "SH",
+      "meaning": "Steel shots / heat carrier (solid)",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!41",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "CH",
+      "meaning": "Char (solid)",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!42",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "PV",
+      "meaning": "Pyrolysis vapours",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!43",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "PG",
+      "meaning": "Pyrolysis gases",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!44",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "NCG",
+      "meaning": "Non-condensable gases",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!45",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "BO",
+      "meaning": "Bio-oil",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!46",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "OX",
+      "meaning": "Oxygen / oxidant",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!47",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "SG",
+      "meaning": "Syngas",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!48",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "EG",
+      "meaning": "Engine exhaust gas",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!49",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Service code",
+      "code": "CWS / CWR",
+      "meaning": "Cooling water supply / return",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!50",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Pipe spec",
+      "code": "CS1",
+      "meaning": "Carbon steel ASME B31.3 150#",
+      "drawing_symbol": null,
+      "standard": "project (to be confirmed)",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!51",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Pipe spec",
+      "code": "SS1",
+      "meaning": "Stainless steel oxygen-clean 150#",
+      "drawing_symbol": null,
+      "standard": "project (to be confirmed)",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!52",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Pipe spec",
+      "code": "SS2",
+      "meaning": "High-temperature stainless (>200 C)",
+      "drawing_symbol": null,
+      "standard": "project (to be confirmed)",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!53",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Insulation",
+      "code": "H",
+      "meaning": "Hot insulation / personnel protection (>60 C)",
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!54",
+      "status": "candidate_unapproved"
+    },
+    {
+      "category": "Insulation",
+      "code": "N",
+      "meaning": null,
+      "drawing_symbol": null,
+      "standard": "project",
+      "source": "PID_gasifier_mode_lists.xlsx::Legend!55",
+      "status": "candidate_unapproved"
+    }
+  ]
+}

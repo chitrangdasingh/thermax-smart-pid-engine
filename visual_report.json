@@ -1,0 +1,1 @@
+{"train": 480, "synthetic_test": 144, "synthetic_accuracy": 0.9027777777777778, "limitation": "Same glyph templates in both sets; not real drawing performance."}
